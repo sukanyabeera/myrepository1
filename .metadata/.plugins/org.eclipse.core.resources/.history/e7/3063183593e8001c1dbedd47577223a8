@@ -1,0 +1,14 @@
+package com.automobile.twowheeler;
+
+import com.automobile.Vehicle;
+
+public class Test {
+
+	public static void main(String[] args) {
+		Vehicle vehicle;
+		vehicle=new Hero();
+
+
+	}
+
+}

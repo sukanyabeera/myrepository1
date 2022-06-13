@@ -1,0 +1,22 @@
+package library;
+
+public class AdultUsers implements LibraryUser {
+
+	@Override
+	public void registerAccount() {
+		
+		if(age>12) {
+			System.out.println("You have successfully registered under adult");
+		}
+		else
+			System.out.println("not Eligable");
+	}
+
+	@Override
+	public void requestBook() {
+
+		
+		
+	}
+
+}

@@ -1,0 +1,35 @@
+package com.database;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+
+public class ProgramOnPreparedStmt {
+
+	public static void main(String[] args) throws ClassNotFoundException, SQLException {
+		Class.forName("com.mysql.cj.jdbc.Driver");
+		String url="jdbc:mysql://localhost:3306/motivity";
+		String username="root";
+		String password="shiny";
+		Connection connection=DriverManager.getConnection(url,username,password);
+		
+		PreparedStatement ps=connection.prepareStatement("insert into furniture values(?,?,?,?,?.?)");
+		
+		ps.setString(1,"center table");
+		ps.setInt(2, 5000);
+		ps.setString(3,"glass");
+		ps.setString(4,"white");
+		ps.setInt(5,2);
+		ps.setString(6,"ikea");
+		
+		int x=ps.executeUpdate();
+		if(x!=0) {
+			System.out.println(" record inserted");
+		}
+		
+		
+
+	}
+
+}

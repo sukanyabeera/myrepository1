@@ -1,0 +1,37 @@
+package com.automobile.twowheeler;
+
+import com.automobile.Vehicle;
+
+class VehicleFactory{
+	Vehicle getVehicle(String nameOfVehicle) {
+		if(nameOfVehicle.equals("Honda"))
+		{
+			return new Honda();
+		}
+		else if(nameOfVehicle.equals("Hero"))
+		{
+			return new Hero();
+		}
+		else 
+		return null;
+	}
+}
+
+public class Test {
+
+	public static void main(String[] args) {
+		VehicleFactory vf=new VehicleFactory();
+		Vehicle v=vf.getVehicle("Hero");
+		System.out.println(v.getModelName());
+		System.out.println(v.getRegistrationNumber());
+		System.out.println(v.getownerName());
+		Hero hero=new Hero();
+		Honda honda=new Honda();
+		
+		
+		
+		
+
+	}
+
+}

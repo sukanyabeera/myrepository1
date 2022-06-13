@@ -1,0 +1,21 @@
+package com.Exceptions;
+
+public class HandleNumberFormateException {
+
+	public static void main(String[] args) {
+		
+		int price=200;
+		int discount=10;
+		String amount;
+		
+		try {
+			System.out.println("discount is "+(amount=String(price/discount));
+			System.out.println(amount);
+		}
+		catch(NumberFormatException  e) {
+			System.out.println(e);
+		}
+		
+		
+	}
+}

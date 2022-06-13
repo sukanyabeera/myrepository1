@@ -1,0 +1,18 @@
+package library;
+
+public class AdultUsers implements LibraryUser {
+
+	@Override
+	public void registerAccount() {
+		
+		
+	}
+
+	@Override
+	public void requestBook() {
+
+		
+		
+	}
+
+}

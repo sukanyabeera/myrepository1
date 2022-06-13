@@ -1,0 +1,36 @@
+package com;
+
+class Decor{
+	static {
+		System.out.println(" This is Decor static block");
+	}
+	Decor(){
+		System.out.println(" This is Decor constructor");
+		
+	}
+}
+ class Design{
+	 Design(){
+			System.out.println(" This is Design constructor");
+			
+		}
+	 static {
+			System.out.println(" This is Design static block");
+		}
+		
+ }
+
+
+public class Example {
+
+	public static void main(String[] args) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
+	
+		System.out.println(" main static method");
+		Class x=Class.forName("com.Decor");
+		
+		x.newInstance();
+		
+
+	}
+
+}

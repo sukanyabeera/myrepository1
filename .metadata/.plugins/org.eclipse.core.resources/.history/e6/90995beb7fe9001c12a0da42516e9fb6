@@ -1,0 +1,21 @@
+package com.classforname;
+
+
+class Decor{
+	
+	static {
+		System.out.println("static block");
+	}
+}
+
+public class ProgramOnForName {
+
+	public static void main(String[] args) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
+		System.out.println("static method");
+		Class x=Class.forName("com.classforname.Decors");
+		x.newInstance();
+       
+	}
+	
+
+

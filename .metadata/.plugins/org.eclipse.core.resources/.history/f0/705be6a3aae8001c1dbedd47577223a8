@@ -1,0 +1,14 @@
+package library;
+
+public class Test {
+
+	public static void main(String[] args) {
+
+		KidUsers lu=new KidUsers();
+		lu.age=11;
+		lu.bookType="abc";
+		lu.registerAccount();
+		lu.requestBook();
+	}
+
+}

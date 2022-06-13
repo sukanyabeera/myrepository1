@@ -1,0 +1,49 @@
+package com.collections;
+
+import java.util.Stack;
+
+public class CollectionStackProgram {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Stack<String> furni=new Stack<String>();
+		furni.push("jimmy");
+		furni.push("john");
+		furni.push("juda");
+		furni.push("juda");
+		furni.push("jack");
+		furni.push(" ");
+		furni.push("caleb");
+		furni.push("emeto");
+		
+		//it is accepting duplicate values and null values
+	/*	System.out.println(furni);
+		//when we pop() it is removing the last element because stack follows last in first out order
+		furni.pop();
+		System.out.println(furni);
+		furni.push("sony");
+		System.out.println(furni.empty());
+		//stack following insertion order while displaying the elements
+		System.out.println(furni);
+		
+		//peek() is used to retrieve/display the last element
+		System.out.println(furni.peek());
+		System.out.println(furni);
+		
+		//it returns the value at given index 
+		System.out.println(furni.get(2));
+		
+		//*/
+		System.out.println(furni.remove(2));
+		System.out.println(furni);
+		System.out.println(furni.remove(furni));
+		System.out.println(furni);
+		
+		
+		
+		
+		
+	}
+
+}

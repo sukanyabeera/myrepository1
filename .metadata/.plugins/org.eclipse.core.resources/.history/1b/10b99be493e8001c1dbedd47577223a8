@@ -1,0 +1,30 @@
+package com.automobile.twowheeler;
+
+import com.automobile.Vehicle;
+
+public class Hero extends Vehicle {
+
+	public String getModelName() {
+		System.out.print(" Hero model name is ");
+		return "Passion pro";
+	}
+
+	public String getRegistrationNumber() {
+		System.out.print(" Registration number for Hero is ");
+		return "TS45283";
+	}
+	public String getownerName() {
+		System.out.print("owner of the Hero is ");
+		return "sukanya";
+	}
+	public int getSpeed() 
+	{
+		System.out.print("The current speed of the Hero is ");
+		return 120;	
+	}
+
+	public void radio() {
+		
+		System.out.println("provides facility to control the radio device ");
+	}
+}

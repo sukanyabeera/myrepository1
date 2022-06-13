@@ -1,0 +1,5 @@
+package com.factoryMethodProgram;
+
+public interface FactoryMethodProgram {
+
+}

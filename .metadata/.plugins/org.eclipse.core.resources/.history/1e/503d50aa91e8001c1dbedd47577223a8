@@ -1,0 +1,16 @@
+package com.automobile.twowheeler;
+
+import com.automobile.Vehicle;
+
+class VehicleFactory{
+	
+}
+
+public class Tset {
+
+	public static void main(String[] args) {
+				ve
+
+	}
+
+}

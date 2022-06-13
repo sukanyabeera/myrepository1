@@ -1,0 +1,13 @@
+
+public class Calculator {
+	static int powerInt(int numi, int num2)
+	{
+		
+		return 
+	}
+	static double powerDouble(double numi, int num2){
+		
+		return
+	}
+
+}

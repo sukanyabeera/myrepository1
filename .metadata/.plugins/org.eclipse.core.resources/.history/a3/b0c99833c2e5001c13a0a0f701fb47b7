@@ -1,0 +1,28 @@
+package com.Exceptions;
+
+class OfficeFurniture{
+	int price;
+	String color;
+	String brand;
+	int discount;
+	
+	OfficeFurniture(int price){
+		this.price=price;
+	}
+	
+	public void discount() {
+		discount=price/10;
+		System.out.println("you got 10% discount ie. "+discount );
+	}
+}
+
+public class ArithmeticException {
+
+	public static void main(String[] args) {
+		OfficeFurniture furni=new OfficeFurniture(2000);
+		furni.discount();
+	
+
+	}
+
+}

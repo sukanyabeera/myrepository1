@@ -1,0 +1,11 @@
+package library;
+
+public class Test {
+
+	public static void main(String[] args) {
+
+		KidUsers lu=new KidUsers();
+		lu.age=11;
+	}
+
+}

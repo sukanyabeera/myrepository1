@@ -1,0 +1,23 @@
+package library;
+
+import java.util.Scanner;
+
+public class Test {
+
+	public static void main(String[] args) {
+		
+		Scanner scan=new Scanner(System.in);
+        System.out.println("enter the age");
+		KidUsers lu=new KidUsers();
+		lu.age=scan.nextInt();
+		lu.registerAccount();
+		/*lu.bookType="abc";
+		lu.registerAccount();
+		lu.requestBook();
+		
+		AdultUsers au=new AdultUsers();
+		au.age=20;
+		au.booktype="";*/
+	}
+
+}

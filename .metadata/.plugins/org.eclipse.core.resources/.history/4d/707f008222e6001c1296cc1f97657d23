@@ -1,0 +1,12 @@
+package com.Exceptions;
+
+public class HandleNumberFormateException {
+
+	public static void main(String[] args) {
+		String price="200";
+		int discount=price/10;
+		System.out.println("discount is "+discount);
+		
+	}
+
+}

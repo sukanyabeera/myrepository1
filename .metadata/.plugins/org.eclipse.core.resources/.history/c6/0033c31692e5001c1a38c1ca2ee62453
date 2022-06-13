@@ -1,0 +1,24 @@
+package com.innerclasses;
+
+class Interior{
+	int price=2000;
+	void order() {
+		System.out.println("order confirmed");
+		class HomeFurniture{
+			void cost(){
+				System.out.println("cost of the furniture "+price);
+			}
+			}
+		HomeFurniture home=new HomeFurniture();
+		home.cost();
+		}
+	}
+
+public class LocalInnerClass {
+	public static void main(String args[]) {
+		Interior furni=new Interior();
+		furni.order();
+		
+	}
+
+}

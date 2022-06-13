@@ -1,0 +1,23 @@
+package com.Exceptions;
+
+
+class KitchenFuniture{
+	String item=null;
+	
+	public void selectTheThing() {
+		
+		 
+			System.out.println(item.length());
+		
+	}
+	
+}
+public class HandlingNullPointerException {
+
+	public static void main(String[] args) {
+	
+		KitchenFuniture kitch=new KitchenFuniture();
+		kitch.selectTheThing();
+	}
+
+}

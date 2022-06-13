@@ -1,0 +1,26 @@
+package com.innerclasses;
+class Furniture1{
+	 static String material="wooden";
+	 String material1;
+	 
+	  Furniture1()
+	  {
+		 material1="Red wood";
+	 }
+	Furniture1 anony=new Furniture1() 
+	        {
+		
+		
+	};
+	
+	
+}
+public class AnonymousInnerClass {
+
+	public static void main(String[] args) {
+		Furniture1 furni=new Furniture1();
+		
+
+	}
+
+}

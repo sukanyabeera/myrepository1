@@ -1,0 +1,19 @@
+package com.classforname;
+
+class Decors{
+	static {
+		System.out.println("static block");
+	}
+}
+
+public class ClassForName {
+	
+
+	public static void main(String[] args) {
+
+		System.out.println("static method");
+	}
+	Class x=Class.forName("com.classforname.Decors");
+         x.newInstance();
+
+}

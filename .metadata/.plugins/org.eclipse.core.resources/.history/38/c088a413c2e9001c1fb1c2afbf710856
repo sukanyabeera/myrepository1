@@ -1,0 +1,48 @@
+package railways;
+
+import java.util.Random;
+
+class FactoryCompartment{
+	Compartment getCompartment(String random_int) {
+		if(random_int.equals("1")) {
+			return new Luggage(); 
+		}
+		else if(random_int.equals("2")) {
+			return new Ladies(); 
+		}
+		else if(random_int.equals("3")) {
+			return new Ganeral(); 
+		}
+		else if(random_int.equals("4")) {
+			return new FirstClass(); 
+		}
+		else
+		return null;
+		
+	}
+}
+
+public class TsetCompartment {
+
+	public static void main(String[] args) {
+		int compartment[]=new int[10];
+		Random rand=new Random();
+		
+		int min = 1;
+	      int max = 4;
+	    //Generate random int value from 1 to 4 
+	      System.out.println("Random value  from "+min+" to "+max+ ":");
+	      int random_int = (int)Math.floor(Math.random()*(max-min+1)+min);
+	      System.out.println(random_int);
+	      
+	      FactoryCompartment fc=new FactoryCompartment();
+	      Compartment c=fc.getCompartment("random_int");
+	      c.notice();
+	      
+	        
+	      
+	      
+	      
+	}
+
+}

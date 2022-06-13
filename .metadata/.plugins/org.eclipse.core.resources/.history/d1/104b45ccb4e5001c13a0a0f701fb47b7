@@ -1,0 +1,31 @@
+package com.innerclasses;
+
+class Furniture1{
+	
+	void comfort() {
+		System.out.println("comfortable Furniture");
+	}
+	
+	 class  HomeFurniture{
+		void feel() {
+			System.out.println(" very comfortablr");
+		}
+		
+	}
+}
+
+
+public class staticInnerClass {
+
+	public static void main(String[] args) {
+		Furniture1 furni=new Furniture1();
+		Furniture1.HomeFurniture furni1= furni.new HomeFurniture();
+		furni.comfort();
+		furni1.feel();
+
+		
+		
+
+	}
+
+}

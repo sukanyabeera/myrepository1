@@ -1,0 +1,55 @@
+package com.database;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+public class ProgramOnPreparedStmt {
+
+	public static void main(String[] args) throws ClassNotFoundException, SQLException {
+		Class.forName("com.mysql.cj.jdbc.Driver");
+		String url="jdbc:mysql://localhost:3306/motivity";
+		String username="root";
+		String password="shiny";
+		Connection connection=DriverManager.getConnection(url,username,password);
+		
+		PreparedStatement ps=connection.prepareStatement("insert into furniture values(?,?,?,?,?,?)");
+		
+		ps.setString(1,"center table");
+		ps.setInt(2, 5000);
+		ps.setString(3,"glass");
+		ps.setString(4,"white");
+		ps.setInt(5,2);
+		ps.setString(6,"ikea");
+		
+		int x=ps.executeUpdate();
+		if(x!=0) {
+			System.out.println(" preparedStatement record inserted");
+		}
+		
+		PreparedStatement p=connection.prepareStatement("update furniture set warranty=? where fname=?");
+		p.setInt(1,3);
+		p.setString(2,"canopy");
+		int y=p.executeUpdate();
+		if(y!=0) {
+			System.out.println(" preparedStatement record updated");
+			System.out.println("----------------------------------------------");
+		}
+           
+		PreparedStatement prepare=connection.prepareStatement("select * from furniture where sid in(?,?,?)");
+		prepare.setString(1,"divan");
+		prepare.setString(2,"sofa");
+		prepare.setString(3,"canopy");
+		ResultSet result=prepare.executeQuery();
+		
+		while(result.next()) {
+			System.out.println(result.getString(1)+"     "+result.getInt(2)+"      "+result.getString(3)+
+					"         "+result.getString(4)+"       "+result.getInt(5)+"       "+result.getString(6));;
+		}
+	  
+		
+		
+	}
+
+}

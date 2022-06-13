@@ -1,0 +1,13 @@
+package com.Exceptions;
+
+
+public class HandleArraystoreException {
+
+	public static void main(String[] args) {
+	
+		Object[] name=new String[3];
+		name[3]=5;
+
+	}
+
+}

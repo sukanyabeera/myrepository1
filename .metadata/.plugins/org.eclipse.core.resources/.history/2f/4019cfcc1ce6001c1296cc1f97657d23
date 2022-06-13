@@ -1,0 +1,21 @@
+package com.Exceptions;
+
+class HomeFurniture{
+	
+	//String[] furniture=new String[]{"dinning table","chair","canopy","almira","cupboards"};
+	
+	for(int i=0; i<=furniture.length; i++)
+	{
+		
+	}
+
+}
+
+public class HandleArrayindecxOutOfBounds {
+
+	public static void main(String[] args) {
+
+
+	}
+
+}

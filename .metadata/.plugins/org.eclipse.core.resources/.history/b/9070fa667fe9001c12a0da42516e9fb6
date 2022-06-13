@@ -1,0 +1,15 @@
+package com.classforname;
+
+public class ProgramOnForName {
+
+	public static void main(String[] args) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
+		// TODO Auto-generated method stub
+		System.out.println("static method");
+		Class x=Class.forName("com.classforname.Decors");
+        x.newInstance();
+	}
+	
+
+	}
+
+

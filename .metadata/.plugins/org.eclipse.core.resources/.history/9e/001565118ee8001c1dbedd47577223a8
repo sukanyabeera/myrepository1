@@ -1,0 +1,34 @@
+package com.automobile.twowheeler;
+
+import com.automobile.Vehicle;
+
+public class Hero extends Vehicle {
+
+	public String getModelName() {
+		
+		return "Passion pro";
+	}
+
+	public String getRegistrationNumber() {
+		
+		return "TS45283";
+	}
+
+
+	public String getownerName() {
+	
+		return "sukanya";
+	}
+	public int getSpeed() 
+	{
+		return 120;	
+	}
+
+	public void radio {
+		System.out.println("provides facility to control the radio device ");
+	}
+
+	
+	
+
+}
