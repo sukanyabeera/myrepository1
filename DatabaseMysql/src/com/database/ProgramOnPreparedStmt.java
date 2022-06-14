@@ -42,6 +42,9 @@ public class ProgramOnPreparedStmt {
 			System.out.println(" record inserted");
 		}
 		
+		//System.out.println(" enter 1.insert 2.update 3.delete 4.select");
+		//int x=scan.nextInt();
+		
 		/*PreparedStatement p=connection.prepareStatement("update furniture set warranty=? where fname=?");
 		p.setInt(1,3);
 		p.setString(2,"canopy");
@@ -62,7 +65,7 @@ public class ProgramOnPreparedStmt {
 					"         "+result.getString(4)+"       "+result.getInt(5)+"       "+result.getString(6));
 		}
 	  */
-	
+		PreparedStatement prepare=connection.prepareStatement("delete from furniture where  fname=?");
 		
 	}
 
