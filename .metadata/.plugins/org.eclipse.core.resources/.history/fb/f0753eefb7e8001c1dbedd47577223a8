@@ -1,5 +1,0 @@
-package railways;
-
-public abstract class Compartment {
-
-}

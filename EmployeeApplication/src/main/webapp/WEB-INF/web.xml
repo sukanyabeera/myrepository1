@@ -1,0 +1,53 @@
+<web-app>
+<servlet>
+<servlet-name> first</servlet-name>
+<servlet-class>com.employee.ManagerRegister</servlet-class>
+</servlet>
+
+<servlet-mapping>
+<servlet-name> first</servlet-name>
+<url-pattern>/managerregister</url-pattern>
+</servlet-mapping>
+
+<servlet>
+<servlet-name> second</servlet-name>
+<servlet-class>com.employee.EmployeeRegister</servlet-class>
+</servlet>
+
+<servlet-mapping>
+<servlet-name> second</servlet-name>
+<url-pattern>/employeeregister</url-pattern>
+</servlet-mapping>
+<servlet>
+<servlet-name>third</servlet-name>
+<servlet-class>com.employee.EmployeeLogin</servlet-class>
+</servlet>
+
+<servlet-mapping>
+<servlet-name>third</servlet-name>
+<url-pattern>/employeelogin</url-pattern>
+</servlet-mapping>
+
+<servlet>
+<servlet-name> fourth</servlet-name>
+<servlet-class>com.employee.ManagerLogin</servlet-class>
+</servlet>
+
+<servlet-mapping>
+<servlet-name>fourth</servlet-name>
+<url-pattern>/managerlogin</url-pattern>
+</servlet-mapping>
+
+<servlet>
+<servlet-name>leave</servlet-name>
+<servlet-class>com.employee.ApplyLeave</servlet-class>
+</servlet>
+
+<servlet-mapping>
+<servlet-name>leave</servlet-name>
+<url-pattern>/applyleave</url-pattern>
+</servlet-mapping>
+
+</web-app>
+
+

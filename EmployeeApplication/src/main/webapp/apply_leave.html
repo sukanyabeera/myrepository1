@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="leave_style.css"/>
+</head>
+
+<body bgcolor="lightseagreen">
+<h1 align="center"> apply leave
+</h1>
+<h3 align="center">
+<a href="index.html">Home</a>&nbsp;&nbsp;
+<a href="apply_leave.html">Apply Leave</a>&nbsp;&nbsp;
+<a href="leave_status.jsp">Leave status</a>&nbsp;&nbsp;
+<a href="index.html">Logout</a>&nbsp;&nbsp;
+<br><br>
+</h3>
+
+<form action="./applyleave" method="post" align="center">
+
+<h2>Register Here!</h2><br>
+<lable>Employee ID:</lable>
+<input type="number" name="eid" placeholder="enter your Id">
+<br>
+<lable>Name:</lable>
+<input type="text" name="name" placeholder="enter your Name">
+<br>
+<lable>Mail Id:</lable>
+<input type="email" name="email" placeholder="enter mail Id">
+<br>
+<lable>From :</lable>
+<input type="date" name="fromdate" id="fromdate" placeholder="select date">
+<br>
+<lable>To :</lable>
+<input type="date" name="todate" id="todate" placeholder="select date" onchange="numOfDays()">
+<br>
+<lable>Days:</lable>
+<input type="number" name="days" id="days">
+<br>
+<lable>Department :</lable>
+<select name="department"> 
+<option value="Development">Development</option>
+<option value="Testing">Testing</option>
+<option value="Administration">Administration</option>
+<option value="Sales">Sales</option>
+</select><br>
+<br>
+<input type="submit" value="submit" disabled="disabled" id = "apply">
+</form>
+</body>
+
+<<script>
+function numOfDays(){
+var date1 = document.getElementById("fromdate").value;
+var date2 = document.getElementById("todate").value;
+var d1 = new Date(date1);
+var d2 = new Date(date2);
+var timediff = d2.getTime()-d1.getTime();
+var result = timediff/(60000*60*24);
+result = result+1;
+
+
+
+if(result<3)
+{
+document.getElementById("days").value = result;
+document.getElementById("apply").disabled = false;
+}
+else
+{
+document.getElementById("err").innerHTML = "you can take only two leaves"
+}
+}
+</script>
+
+</html>

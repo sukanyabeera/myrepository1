@@ -1,0 +1,42 @@
+<web-app>
+<servlet>
+<servlet-name> first</servlet-name>
+<servlet-class>com.motivity.StudentRegister</servlet-class>
+</servlet>
+
+<servlet-mapping>
+<servlet-name> first</servlet-name>
+<url-pattern>/studentregister</url-pattern>
+</servlet-mapping>
+ 
+ <servlet>
+<servlet-name> second</servlet-name>
+<servlet-class>com.motivity.StudentLogin</servlet-class>
+</servlet>
+
+<servlet-mapping>
+<servlet-name> second</servlet-name>
+<url-pattern>/studentlogin</url-pattern>
+</servlet-mapping>
+
+
+<servlet>
+<servlet-name> third</servlet-name>
+<servlet-class>com.motivity.StaffRegister</servlet-class>
+</servlet>
+
+<servlet-mapping>
+<servlet-name> third</servlet-name>
+<url-pattern>/staffregister</url-pattern>
+</servlet-mapping>
+
+<servlet>
+<servlet-name> fourth</servlet-name>
+<servlet-class>com.motivity.StaffLogin</servlet-class>
+</servlet>
+
+<servlet-mapping>
+<servlet-name>fourth</servlet-name>
+<url-pattern>/stafflogin</url-pattern>
+</servlet-mapping>
+</web-app>

@@ -19,6 +19,7 @@ public class DatabasePrograms {
 		if(connection!=null)
 		{
 			System.out.println("connection established");
+			
 		}
 		Statement stat=connection.createStatement();
 		//int x=stat.executeUpdate("insert into furniture values('openshelves',1000,'steel','blue',2,'urbanLadder')");

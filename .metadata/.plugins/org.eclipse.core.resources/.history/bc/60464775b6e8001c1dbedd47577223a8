@@ -1,5 +1,0 @@
-package railways;
-
-public class FirstClass extends Compartment{
-
-}
